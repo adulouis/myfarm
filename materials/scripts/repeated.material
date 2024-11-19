@@ -1,0 +1,14 @@
+material RepeatedGrass/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Grass.jpg
+      }
+    }
+  }
+}

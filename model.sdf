@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="farm_terrain">
+    <pose>0 0 0 0 0 0</pose>
+    <static>true</static> <!-- Set to true for static models -->
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://myfarm/meshes/myfarm.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://myfarm/materials/scripts/</uri>
+            <uri>model://myfarm/materials/textures/</uri>
+            <name>RepeatedGrass/Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://myfarm/meshes/myfarm.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
